@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    enter width: <input type="text" id="width">
+    <br>
+    enter height: <input type="text" id="height"> <br>
+    <button onclick="cal()">calculate</button>
+
+    <div id="ans"></div>
+    <script>
+        function cal(){
+         let a=document.getElementById("width").value;
+         let b=document.getElementById("height").value;
+
+         document.getElementById("ans").innerHTML=`<h1>The area of rectangle is ${a*b} </h1>`
+        }
+    </script>
+</body>
+</html>

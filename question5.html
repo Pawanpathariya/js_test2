@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enter number <input type="text" id="num1"> <br>
+    enter number <input type="text" id="num2"> <br>
+    enter number <input type="text" id="num3"> <br>
+    <button onclick="cal()" >calculate</button>
+
+    <script>
+
+        function cal(){
+        let n1=Number(document.getElementById("num1").value);
+        let n2=Number(document.getElementById("num2").value);
+        let n3=Number(document.getElementById("num3").value);
+
+        if(n1>n2 && n1>n3){
+            alert(n1," is greater from all");
+        }
+        if(n2>n1 && n2>n3){
+            alert(n2," is greater from all");
+        }
+        if(n3>n2 && n3>n1){
+            alert(n3," is greater from all");}
+        }
+    </script>
+</body>
+</html>

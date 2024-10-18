@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="sh"></div>
+    <script>
+        function dis(){
+            let x="";
+        for(let i=4;i>=1;i--){
+           let c=4;
+            for(let j=i;j>=1;j--){
+         x+=c+" ";
+         c--;
+            }
+      x+="<br>"
+        }
+        document.write(x);   
+    }
+    setTimeout(dis,1000);
+    </script>
+</body>
+</html>

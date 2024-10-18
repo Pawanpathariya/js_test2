@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doc</title>
+</head>
+<body bgcolor="aqua"">
+    <h1>Enter string</h1>
+    <input type="text" id="inputString" placeholder="Enter a string"> <br><br>
+    <button onclick="change()">Convert</button>
+    <p id="result"></p>
+
+    <script>
+        function change() {
+            var a = document.getElementById("inputString").value;
+            var words = a.split(" ");
+            var cw = words.map(function(key) {
+                return key.charAt(0).toUpperCase() + key.slice(1);
+            });
+            var result = cw.join(" ");
+            document.getElementById("result").innerHTML = "<h1> Ans : " + result,"</h1>";
+        }
+    </script>
+</body>
+</html>
